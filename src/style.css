@@ -1,0 +1,82 @@
+@font-face {
+  font-family: Variablevf;
+  src: url("/fonts/NeuethingSans-variableVF.woff2") format("woff2");
+  font-weight: 50 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: #000;
+  background-color: #101111;
+}
+
+.hero {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 100dvh;
+  color: #c0c1c5;
+}
+
+.logo-clamp {
+  width: clamp(160px, 22vw, 400px);
+}
+
+.logo-icon {
+  display: none;
+  width: 300px;
+  color: #363636;
+}
+
+.heading {
+  opacity: 1;
+  font-variation-settings: "wght" 50, "wdth" 80;
+  text-align: center;
+  letter-spacing: 0.04em;
+  max-width: 17ch;
+  margin: 0;
+  font-family: Variablevf, sans-serif;
+  font-size: clamp(14px, 1.1vw, 24px);
+  font-weight: 100;
+  line-height: 1.2em;
+}
+
+@media screen and (max-width: 991px) {
+  .heading {
+    letter-spacing: -0.03rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .heading {
+    color: #c0c1c5;
+    font-size: 6svw;
+    line-height: 7svw;
+  }
+}
