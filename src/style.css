@@ -54,7 +54,7 @@ h6 {
 
 .div-block-3 {
   grid-column-gap: 12px;
-  grid-row-gap: 12px;
+  grid-row-gap: 42px;
   color: #c0c1c5;
   flex-flow: column;
   justify-content: center;
